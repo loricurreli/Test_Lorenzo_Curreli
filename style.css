@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.aside_left{
+    width: 20%;
+    background: grey;
+    display: flex;
+    justify-content: center;
+}
+
+.rettangolo{
+    width: 70%;
+    height: 6rem;
+    margin-top: 2rem;
+    background: blue;
+}
+
+.main{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    height: 5rem;
+    background: lightgrey;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.quad{
+    background: grey;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.search{
+    width: 80%;
+    height: 20rem;
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input{
+
+    font-size: 1.3rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.search button{
+    font-size: 1.3rem;
+    width: 10rem;
+    padding: 0.5rem;
+    background: grey;
+    border-radius: 5px;
+    border: none;
+}
+
+.profile{
+    display: flex;
+    justify-content: flex-end;
+    height: 6rem;
+}
+
+.circle{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background: gray;
+    margin: 0 1rem 1rem 0;
+}
+.rect{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .aside_left{
+        display: none;
+    }
+    .main{
+        width: 100%;
+    }
+
+    .profile{
+        justify-content: flex-start;
+        margin: 0 0 1rem 1rem;
+
+    }
+    .search button{
+        display: none;
+    }
+    .search{
+        width: 100%;
+        background: rgb(180, 172, 172);
+    }
+    .center{
+        align-items: flex-start;
+       
+    }
+    .rect{
+        display: inline;
+        background: blue;
+        height: 3rem;
+        width: 10rem;
+        margin-left: 2rem;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+}
